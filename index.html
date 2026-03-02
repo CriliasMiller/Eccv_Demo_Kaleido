@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="KALEIDO: OPEN-SOURCED MULTI-SUBJECT REFERENCE VIDEO GENERATION MODEL">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="Open sourced multi-subject reference video generation model.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="diffusion, AI">
+  <!-- TODO: List all authors -->
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Open sourced multi-subject reference video generation model.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2025-10">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Diffusion">
+  <meta property="article:tag" content="AI">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="KALEIDO: OPEN-SOURCED MULTI-SUBJECT REFERENCE VIDEO GENERATION MODEL">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="None">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>Kaleido Zhipu AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <!-- Favicon and App Icons -->
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/z_ai.png"> -->
+  <!-- <link rel="apple-touch-icon" href="static/images/z_ai.png"> -->
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-widescreen">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">KALEIDO: OPEN-SOURCED MULTI-SUBJECT REFERENCE VIDEO GENERATION MODEL</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6Uqe9ewAAAAJ&hl=zh-CN&oi=sra" target="_blank">Zhenxing Zhang</a>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=68PC4LMAAAAJ&hl=zh-CN&oi=sra" target="_blank">Jiayan Teng</a>†</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=tgAt-gEAAAAJ&hl=zh-CN&oi=sra" target="_blank">Zhuoyi Yang</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tiankun Cao</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Cheng Wang</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=YR4Lp0QAAAAJ&hl=zh-CN&oi=sra" target="_blank">Xiaotao Gu</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=n1zDCkQAAAAJ&hl=zh-CN&oi=ao" target="_blank">Jie Tang</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=DsEONuMAAAAJ&hl=zh-CN&oi=ao" target="_blank">Dan Guo</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=rHagaaIAAAAJ&hl=zh-CN&oi=sra" target="_blank">Meng Wang</a><sup>*</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">Hefei University of Technology, Tsinghua University, Zhipu AI<br></span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author <sup>†</sup>Project Lead<br></small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                    <span class="link-block">
+                      <a href="https://anonymous.4open.science/r/Kaleido-C6E6/README.md" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                      </a>
+                    </span>
+
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- single video presentations -->
+<section class="hero teaser-multiple">
+  <div class="container is-fluid">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Single Subject Video Generation</h2>
+      <div class="video-grid">
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/0.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A cartoon figure with long blonde pigtails leaps playfully on a vast, fluffy pink cloud. Her pink, star-adorned cape billows with the movement, and her chunky boots press into the soft surface with each bounce. The butterfly charm on her necklace sways as she lands and springs up again, a determined expression on her face.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">Inside a brightly lit retro diner, a young woman wearing Minnie Mouse ears sits in a red vinyl booth. She leans over a tall, frosty milkshake, her dark hair falling forward. With a small, focused smile, she slowly spins a long spoon in the glass, watching the creamy liquid swirl. She then lifts the spoon, her eyes following the single drop of milkshake clinging to its tip as she brings it close.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/42.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a close-up shot, a stream of shimmering black sand is gently blown away, slowly revealing a rose gold watch fitted with a matte black leather strap. As the last grains of sand clear the dark, patterned dial, the diamond markers and bezel catch a soft light, casting a brilliant sparkle across the frame.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/43.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In the clear, turquoise water of a sunlit lagoon, a golden twisted bracelet slowly sinks. Tiny bubbles cling to its textured surface, catching the light as it gently rotates on its descent toward the soft, white sand below.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/103.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A young hero in a sleek, black armored suit stands on a high rooftop, overlooking the sprawling city at night. Intricate lines of glowing green energy trace the contours of his high-tech suit, casting an emerald sheen on his focused expression. A simple green domino mask hides his eyes as he scans the streets far below, his gaze sharp and unwavering. The cold night wind causes his dark, heavy cape to billow out behind him. For a moment, he is perfectly still, a silent guardian against the darkness. Then, the circular emblem on his chest flares with a brighter green light as he tenses, his gloved hands clenching into fists. He has found what he was looking for.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/115.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A powerful chestnut horse with a shimmering, copper-toned coat gracefully traverses the barren expanse of the moon. Its powerful hooves kick up delicate puffs of fine, grey lunar dust as it prances across the rocky terrain, each stride a blend of strength and elegance. With its long, reddish mane flowing in a silent, ethereal breeze, the horse pauses atop a gentle rise, overlooking the monumental craters that dot the stark landscape. In a moment of quiet reflection, the magnificent creature lifts its gaze to the distant Earth, a radiant blue marble suspended in the black immensity of space. The interplay of harsh light and deep shadow dances across its sleek, muscular form, creating a surreal spectacle of movement against the stately, serene backdrop of the celestial territory. As it resumes its impossible journey, the horse embodies a symbol of grace and freedom, an improbable yet mesmerizing presence amidst the solitude of the moon's ancient surface.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/139.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">On the concrete sidewalk of a bustling city street, a pair of iridescent sneakers sits expectantly. Sunlight glints off their shimmering surfaces, causing the colors to shift and flow from electric blue to deep purple and vibrant pink, as if they hold a captured galaxy. Their chunky white soles provide a stark, modern contrast to the rustic charm of the old brick buildings that line the avenue. As people hurry past, their blurred shapes warp and slide across the sneakers' reflective exteriors. The distant, rhythmic sound of traffic provides a steady beat to the city's pulse, but the shoes remain perfectly still, a whimsical pause in the urban rush, waiting for their owner to return and continue their journey through the cityscape.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/150.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">Iron Man's iconic red and gold armor gleams as he gracefully steps onto a futuristic catwalk, the metallic suit partially veiled by a stunning sheer illusion dress. The vibrant red lace is a bold statement, its intricate floral patterns and tiered midi-length skirt contrasting beautifully with the sleek, powerful lines of his armor. As the spotlights dim to a focused beam, he begins to move down the runway, his every step accentuating the delicate fabric's ethereal drape over his formidable silhouette. The sheer lace, with its unique diagonal texturing on the bodice and avant-garde graphic prints on the skirt, catches the ambient glow, creating a mesmerizing tapestry of light and shadow on his polished surface. With each movement, the short-sleeved dress sways enticingly, highlighting the synergy between advanced technology and high fashion. As he reaches the end of the runway, Iron Man pauses, the dress perfectly framing his powerful figure, before he gracefully pivots, the tiered fabric swirling around him, leaving the audience in awe of the seamless blend of sophistication and strength.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/172.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A young man with dark, neatly-cut hair stands on a brightly lit subway platform during the evening rush. He clutches a worn leather satchel strap slung over his shoulder, his knuckles white. His eyes, full of concentration, dart back and forth, scanning the electronic departures board overhead that flickers with train times and destinations. He shifts his weight from one foot to the other, a subtle sign of impatience. He pulls his dark jacket tighter around himself as a gust of wind, heralding an approaching train, sweeps through the tunnel. His gaze drops from the board and focuses down the dark tracks, a look of anticipation replacing his focused expression as the faint lights of his train appear in the distance.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/14.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A grey and white cat with wide, curious eyes carefully stalks across the top of a grand piano. Its tail gives a slight twitch as it lowers into a crouch, paws silently placed on the glossy black surface. The cat's gaze is fixed intently on a single, slowly descending dust mote dancing in a sunbeam. With a sudden, playful pounce, it bats the air before gracefully landing and continuing its quiet patrol along the piano keys.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/169.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A fluffy, lime-green creature with big, expressive black eyes stands under the warm glow of lanterns in a Taipei night market. Holding a dessert in its yellow, four-fingered hand, it tilts its furry head as it eats, gazing directly toward the camera. The background reveals a quiet street with a few scattered food stalls and sparse crowds, creating a peaceful night-time atmosphere.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/145.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A small, white dog with a coat of tight, fluffy curls trots energetically across a lush, green lawn, its plumed tail wagging with pure delight. As it explores the vibrant, sun-dappled garden, it suddenly freezes mid-trot, its pinkish-brown nose twitching as it catches the sweet, refreshing scent of watermelon on the breeze. Guided by the irresistible aroma, it makes its way to a wooden picnic table where a bright red slice of juicy watermelon rests. With its curious brown eyes gleaming, the dog eagerly sniffs the colorful fruit before taking a small, tentative nibble. The taste is an instant delight, and it begins to chomp enthusiastically, the sweet juice trickling down its chin as it savors its refreshing feast in the tranquil garden.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video presentations -->
+
+<!-- Multi Subject Video Grid -->
+<section class="hero teaser-multiple">
+  <div class="container is-fluid">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Multi Subject Video Generation</h2>
+      <div class="video-grid">
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a sun-drenched attic, a fox character in a green coat carefully pushes a vintage toy car across the dusty wooden floor. Seated in the driver's seat of the tiny car is a small penguin plush toy, its blue beanie askew as it wobbles with the movement. The fox gives the car one final, gentle push, sending it rolling slowly toward a ramp made from a stack of old books. The car, with the penguin plush toy inside, smoothly glides up the ramp and comes to a stop at the top.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/17.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a warmly lit room, a fluffy corgi lies on a large, soft rug, its bushy tail twitching gently. A small grey and white kitten, wearing a delicate golden collar, crouches low, eyes fixed on the tail. With a wiggle of its hindquarters, the kitten pounces, batting playfully at the fluffy tip. The corgi lifts its head and turns, looking with curiosity as the kitten gives another gentle tap before scampering away to hide behind a nearby armchair.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/99.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a beautifully appointed, sunlit room, a fluffy brown teddy bear is having a quiet moment of self-care. It sits comfortably on a plush sofa, a slightly lopsided blue ice pack still resting on its head and a "Get Well" patch peeking out from its chest. Cradled carefully in its lap is a large white ceramic bowl with the words "Bon Appétit" elegantly scripted in gold. The bowl is filled to the brim with fresh, deep-blue blueberries. With a determined but gentle motion, the bear uses one of its soft paws to pick out a single plump berry, brings it up to its stitched smile, and then dips its paw back in for another, enjoying its healthy and delicious treat one by one.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/59.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">Under a canopy of glowing paper lanterns at a crowded night market, a young woman with long dark hair, wrapped in an elegant white cape with toggle fasteners, pauses before a curious stall. Her gaze is fixed on a row of miniature, corked glass bottles. The proprietor, a bizarre, spiky-haired character in a dark suit and a flimsy party hat, leans against a wooden post with an air of profound boredom, listlessly holding an empty martini glass. The woman lifts a hand and points a slender finger towards a small bottle containing a swirling, purple mist. With a theatrical sigh, the character straightens up, places his glass on the counter, and plucks the indicated bottle from its shelf. He holds it out to her between his thumb and forefinger. As she takes it, her fingers gently brush against his. He flinches, his weary eyes widening for a moment. She offers a small, curious smile, before carefully uncorking the bottle. A wisp of shimmering purple light escapes, dancing in the air for a second before vanishing, and a look of quiet wonder spreads across her face. The character watches her, his cynical expression momentarily replaced by one of faint intrigue.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/51.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">On a city rooftop at dusk, a young man in a blue t-shirt leans against a railing, overlooking the urban landscape. A gentle breeze lifts his dark hair as he turns his head slightly. The fading sunlight glints across the lenses of his black rectangular sunglasses before he looks forward again into the twilight.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/37.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a dimly lit garage, a young woman with long, dark hair kneels on the concrete floor. Wearing a black top and delicate gold earrings, she reaches under a dusty workbench and pulls out a small, black fabric utility bag. She sets it down in front of her, and with a focused gaze, her fingers move to unclip the two plastic buckles on the front flap.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/102.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">Inside a cozy living room, a young man with a friendly smile sits on a plush grey sofa, the afternoon light warming the space. Wearing a t-shirt and a black baseball cap turned backwards, he holds a soft, brown sloth plushie in his hands. A wide grin spreads across his face as he playfully animates the toy, making its long, furry arms wave slowly in the air as if in a lazy greeting. He chuckles softly to himself, gently bouncing the sloth on his knee. His dark eyes sparkle with amusement as he continues his lighthearted game, pulling the soft toy into a gentle hug against his chest before setting it down on the cushion beside him.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/28.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a sunlit corner of a cluttered antique shop, a man with a wild blonde afro carefully polishes a large, silver gramophone horn. A young woman in denim overalls weaves through stacks of old furniture and stops at a crowded table. She picks up a small, wooden music box and gently turns its crank. The man pauses, setting down his cloth, and turns his head towards her. She looks up from the music box, meeting his curious gaze across the room.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/112.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">A soft brown sloth plushie sits on the carpeted floor of a bedroom next to a magenta schoolbag. With a determined look on its stitched face, the sloth fumbles with the zipper on the backpack's front pocket, using its soft claws to pull it open. After a moment of rummaging, it triumphantly pulls out a bright yellow, twin-bell alarm clock. Holding the clock in its paws, the plushie's expression seems to brighten, and it suddenly performs a small, joyful hop, its fluffy body bouncing with happiness.</p>
+        </div>
+        
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/124.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In an endless sea of golden sunflowers swaying gently in the breeze, a man with a warm smile and kind eyes leans forward slightly, reaching out his hand. Opposite him, a young woman with long, dark hair lifts her gaze, the corners of her mouth curving upward in a smile of pure joy and contentment. She gently places her hand in his palm, and their fingers intertwine tightly, a gesture conveying a profound warmth and love that radiates between them. As they lock hands, she leans slightly towards him, her expression softening as she savors the sweetness and peace of the moment. Together, they begin to stroll serenely through the sun-drenched field, their silhouettes casting long, elegant shadows that stretch across the vibrant yellow blossoms.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/133.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">Perched quietly on a delicate, spiky branch of a majestic Joshua tree, a little yellow bird begins to flap its wings with increasing vigor. Its wings create a gentle rustling sound, cutting through the stillness of the warm desert air. With its neck elongated and proudly poised, the bird lifts off from its perch, darting gracefully into the open vastness of the brilliant blue sky. The air serenely tugs at its soft, vivid feathers, crafting fluid patterns as it spirals upward. Below, a vibrant blue butterfly emerges, its iridescent wings catching the sunlight like polished jewels as it dances through the air. In the expansive landscape, the singular Joshua tree stands tall, its angular branches stretching towards the sun. As the bird soars higher, it notices the butterfly and embarks on a playful interaction—the two elegantly weave between the tree's reaching arms, catching glimpses of each other's vibrant colors. Together, they perform a breathtaking aerial ballet, a flash of yellow and a shimmer of blue, enjoying the vast expanse of their shared domain, free under the warmth of the sun's golden embrace.</p>
+        </div>
+        <div class="video-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="static/video/46.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">In a bustling urban boba shop, a young man leans against a polished concrete counter. He is dressed in a maroon t-shirt and vibrant purple wide-leg shorts. With one hand, he casually holds a cup of bubble tea, gently swirling it, causing the dark pearls to dance within the milky liquid. He lifts his gaze from the cup, looking thoughtfully through the shop's large glass window at the passing city life, a moment of quiet contemplation amidst the afternoon rush.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            We present Kaleido, a subject-to-video (S2V) generation framework, which aims to synthesize subject-consistent videos conditioned on multiple reference images of target subjects. Despite recent progress in S2V generation models, existing approaches remain inadequate at maintaining multi-subject consistency and at handling background disentanglement, often resulting in lower reference fidelity and semantic drift under multi-image conditioning. These shortcomings can be attributed to several factors. Primarily, the training dataset suffers from a lack of diversity and high-quality samples, as well as cross-paired data, i.e., paired samples whose components originate from different instances. In addition, the current mechanism for integrating multiple reference images is suboptimal, potentially resulting in the confusion of multiple subjects. To overcome these limitations, we propose a dedicated data construction pipeline, incorporating low-quality sample filtering and diverse data synthesis, to produce consistency-preserving training data. Moreover, we introduce Reference Rotary Positional Encoding (R-RoPE) to process reference images, enabling stable and precise multi-image integration. Extensive experiments across numerous benchmarks demonstrate that Kaleido significantly outperforms previous methods in consistency, fidelity, and generlization, marking an advance in S2V generation.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">User Study</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+           <figure class="image is-inline-block">
+            <img src="static/images/user study.png" alt="Dataset Construction Pipeline" class="full-size-pipeline">
+          </figure>
+          <p>
+            Subject-to-video evaluation (left) and user study results comparing Kaleido with VACE, Kling, and Vidu-Q1 (right).
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dataset Construction Pipeline and Framework -->
+<!-- Dataset Construction Pipeline -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered dataset-construction-pipeline">
+      <h2 class="title is-3">Dataset Construction Pipeline</h2>
+      <div style="margin: 2rem 0;">
+        <figure class="image is-inline-block">
+          <img src="static/images/datapipeline-v2.png" alt="Dataset Construction Pipeline" class="full-size-pipeline">
+        </figure>
+        <p class="has-text-justified" style="margin-top: 1.5rem;">
+          <strong>Multi-stage scalable S2V pipeline: video slicing/captioning, subject grounding, quality filtering, bg disentanglement & pose-motion augmentation</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Framework -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered framework-section">
+      <h2 class="title is-3">Framework</h2>
+      <div style="margin: 2rem 0;">
+        <figure class="image is-inline-block">
+          <img src="static/images/rope-v2.png" alt="Framework Illustration">
+        </figure>
+        <p class="has-text-justified" style="margin-top: 1.5rem;">
+          <strong>Illustration of our subject-to-video framework.</strong> (a) Multiple reference images are injected for guided video generation. (b) Video tokens use 3D RoPE positional encoding, while (c) reference images utilize R-RoPE for distinct spatial-temporal positioning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Dataset Construction Pipeline and Framework -->
+<!--End BibTex citation -->
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
